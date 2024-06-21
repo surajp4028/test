@@ -6,13 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="output.css">
+        
+<link rel="stylesheet" href="output.css">
+
+   
+
+    <style>
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+           
+          }
+          
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px ;
+            height: 600px;
+            opacity: .95;
+          }
+
+          .mySwiper2 .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 600px !important;
+            height: 300px !important;
+            opacity: .95;
+          }
+
+          .mySwiper2 .swiper-slide-active{
+            opacity: 1;
+            
+        }
+
+          .swiper-slide-active{
+              opacity: 1;
+              width: 320px ;
+          }
+        .swiper-navigration-size {
+    font-size: 10px;
+}
+
+#wd{
+    max-width: 20px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: red;
+}
+ </style>
+
 </head>
 
 <body>
@@ -116,73 +169,65 @@
         <h2 class="text-4xl font-medium font-body mb-4">Categories</h2>
     </div>
 
-    <div class="max-w-5xl mx-auto p-4">
-
-
-
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-                </div>
+    <!-- cat boxes -->
+    <div class="max-w-6xl mx-auto p-3">
+        <div id="container-box " class="mt-2 flex flex-col md:grid md:grid-cols-3 border border-gray-200 rounded-lg  md:p-10  md:flex-row gap-3 text-center " style="grid-auto-rows: 96px;">
+        <!-- box 1 -->
+        <div id="box1" class="row-start-1 row-end-3 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full overflow-y-hidden " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+            
+            <div class="p-[70px] bg-black opacity-55 w-full rounded-lg flex flex-col justify-center items-center h-full text-white group-hover:text-black group-hover:opacity-45">
+               <h4 class="text-lg"> Automobile</h4>
+               <p>pap</p>
+               
             </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-                </div>
-            </div>
+
         </div>
+         <!-- box 2 -->
+         <div id="box2" class="row-start-1 row-end-4 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center items-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full overflow-y-hidden" style="background: url(./assets/kk.png); background-size: cover; background-position: center;">
+           <div class="p-[70px] bg-black opacity-55 w-full rounded-lg flex flex-col justify-center items-center h-full text-white group-hover:text-black group-hover:opacity-45" >
+              <h4 class="text-lg"> Arts & Entertainment</h4>
+      
+           </div>
 
+       </div>
+       <!-- box 3 -->
+       <div id="box3" class="row-start-1 row-end-3 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full" style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+           <div class="p-[70px] bg-black opacity-55 w-full rounded-lg flex flex-col justify-center items-center h-full text-white group-hover:text-black group-hover:opacity-45" >
+              <h4 class="text-lg"> Home Appliances</h4>
+              <p>pap</p>
+           </div>
 
+       </div>
+         <!-- box 4 -->
+         <div id="box4" class="row-start-3 row-end-6 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center items-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full" style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+           <div class="p-[70px] bg-black opacity-55 w-full rounded-lg flex flex-col justify-center items-center h-full text-white group-hover:text-black group-hover:opacity-45" >
+              <h4 class="text-lg"> Electronics</h4>
+              
+           </div>
+
+       </div>
+       <!-- box 5 -->
+       <div id="box5" class="row-start-4 row-end-6 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full" style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+           <div class="p-[70px] bg-black opacity-55 w-full rounded-lg flex flex-col justify-center items-center h-full text-white group-hover:text-black group-hover:opacity-45" >
+              <h4 class="text-lg"> Education</h4>
+              <p>pap</p>
+           </div>
+
+       </div>
+          <!-- box 6 -->
+          <div id="box6" class="row-start-3 row-end-6 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center items-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full" style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;"> 
+           <div class="p-[70px] bg-black opacity-55 w-full rounded-lg flex flex-col justify-center items-center h-full text-white group-hover:text-black group-hover:opacity-45" >
+              <h4 class="text-lg"> Personal Care</h4>
+             
+           </div>
+
+       </div>
+
+        </div>
     </div>
+    
 
+    
 
     <!-- New Laucnches -->
     <div class="w-full text-center mt-5">
@@ -449,7 +494,645 @@
 
     </div>
 
-    <!-- New Laucnches -->
+    <!-- Trending Now -->
+    <div class="w-full text-center mt-5">
+        <h2 class="text-4xl font-medium font-body mb-4">Trending Now</h2>
+    </div>
+
+    <!-- trnding slides -->
+    <section id="tending-slides relative flex justify-center items-center gap-3 w-full px-3">
+         <!-- Swiper -->
+         <div class="swiper max-w-7xl mx-auto mySwiper">
+            <div class="swiper-wrapper">
+                <!-- slides -->
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-auto p-1 ">
+                    <div class="h-auto w-full ">
+                        <div id="imag" class="z-[1] bg-black rounded-top" style="height: 280px; width: full; background: url(./assets/swipe.png); background-size:cover; background-position: center;">
+                            
+                        </div>
+                        <div id="bottom-box " class="p-3 bg-gray-50 ">
+                            <div class="bg-white shadow-lg p-3 mt-[-60px]">
+                                <div id="icon-box" class="flex items-center justify-between z-[99]">
+                                    <div id="icon-box1">
+                                        <ul class="flex gap-2 items-center text-gray-500 text-[12px]">
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-eye"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-message"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-share"></i> 200</li>
+                                            <li class="text-sm flex items-center gap-1"><i class="fa-solid fa-heart"></i></i> 200</li>
+                                        </ul>
+                                    </div>
+                                    <div id="icon-box2">
+                                        <ul class="flex gap-2 items-center text-gray-500">
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-bookmark"></i></li>
+                                            <li class="bg-gray-100 px-3 py-2 rounded-[25px]"><i
+                                                    class="fa-regular fa-heart "></i></li>
+        
+        
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                                <h2 class="text-md mt-2 text-gray-900 font-medium">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born and</h2>
+                                <p class="mt-2 text-gray-600 text-[13px]">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                                    pain was born and I will give you a complete account of the system, and expound the actual
+                                    teachings of the great explorer of the truth, the master-builder
+                                </p>
+                                <!-- user -->
+                                <div class="flex items-center justify-between mt-3">
+                                    <div class="flex items-center">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                        <img src="./assets/user.jpg" alt="" class="h-10 mr-[-15px] rounded-[50%]">
+                                    </div>
+                                    <button class="px-4 py-2 border border-gray-600 border-2">
+                                        Discover
+                                    </button>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+ <!-- btn -->
+    <div class="flex justify-center items-center text-center">
+        <button class="px-10 py-2 my-5 bg-red-700 border border-red-400 rounded-xl text-white">More</button>
+
+    </div>
+    <!-- swiper -->
+
+    <section class="w-full bg-[#1E2C37] p-6" >
+        <div class="max-w-6xl mx-auto flex md:flex-row flex-col gap-4">
+            <div class="md:w-[40%] w-full p-4 text-white">
+                <h2 class="text-4xl font-bold">Videos</h2>
+                <p class="text-[14px] text-gray-400 mt-2">Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
+
+                <div class="md:w-[180px] w-[200px]">
+                    <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper hidden">
+                        <div class="swiper-slide">
+                          <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                              <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                  <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                              <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                  <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                              <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                  <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                              <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                  <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                              </div>
+                          </div>
+                        </div>
+                    
+                    </div >
+                    <div id="wd"class=" flex mt-5">
+
+                            <div class="swiper-button-next p-[25px] mb-5  rounded-full bg-white"></div>
+                            <div class="swiper-button-prev p-[25px] mb-5  rounded-full bg-white"></div>
+
+                    </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="md:w-[60%] w-full p-4 text-white">
+                <div >
+                    <p class="text-gray-500">08.08.2001</p>
+                    <h3 class="text-xl font-medium mt-2">Richird Norton photorealistic rendering as real photos</h3>
+
+                      <!-- swiper section -->
+
+                      <div #swiperRef="" class="swiper mySwiper2 mt-[-40px] ">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                                <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                    <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="mt-5 h-[250px] w-full " style="background: url(./assets/ssd.jpg); background-size: cover; background-position: center;">
+
+                                <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                    <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                                <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                    <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                                <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                    <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                                <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                    <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="mt-5 h-[250px] w-full " style="background: url(./assets/car\ \(1\).png); background-size: cover; background-position: center;">
+
+                                <div class="bg-black/60  w-full h-full flex justify-center items-center text-white ">
+                                    <i class="fa-regular fa-circle-play text-[40px] text-gray-300"></i>
+                                </div>
+                            </div>
+                          </div>
+                      
+                        </div>
+                        <!-- <div class="">
+                            <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        </div> -->
+                        
+                      </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <!-- Influencers pack -->
     <div class="w-full text-center mt-5">
         <h2 class="text-4xl font-medium font-body mb-4">Influencer’s Pick</h2>
     </div>
@@ -459,11 +1142,11 @@
     <div class="w-full mt-5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 grid-cols-1 mb-3">
             <!-- box 1 -->
-            <div class="flex md:flex-row flex-col items-center">
-                <div class="w-[60%] border rounded-lg h-full bg-gray-600">
+            <div class="flex md:flex-row flex-col items-center p-3">
+                <div class="md:w-[60%] w-full border rounded-lg h-full bg-gray-600">
                     <img src="./assets/box.png" alt="" class="object-cover h-full border rounded-lg w-full">
                 </div>
-                <div class="p-3 w-[60%] ">
+                <div class="p-3 md:w-[60%] w-full">
                     <div class="w-full h-full ">
                         <div class="h-full w-full ">
 
@@ -513,11 +1196,11 @@
                 </div>
             </div>
             <!-- box 2 -->
-            <div class="flex md:flex-row flex-col items-center">
-                <div class="w-[60%] border rounded-lg h-full bg-gray-600">
+            <div class="flex md:flex-row flex-col items-center p-3">
+                <div class="md:w-[60%] w-full border rounded-lg h-full bg-gray-600">
                     <img src="./assets/box.png" alt="" class="object-cover h-full border rounded-lg w-full">
                 </div>
-                <div class="p-3 w-[60%] ">
+                <div class="p-3 md:w-[60%] w-full ">
                     <div class="w-full h-full ">
                         <div class="h-full w-full ">
 
@@ -660,6 +1343,58 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              
+              slidesPerView: 3,
+              
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 3,
+                slideShadows: true,
+              },
+              
+              loop:true,
+              initialSlide: 0,
+             
+              autoplay: {
+               
+                delay: 2000,
+              },
+
+              breakpoints: {  
+                '480': {
+                  slidesPerView: 1,
+                  },
+                '640': {
+                  slidesPerView: 3,
+                   },
+              },
+              
+              spaceBetween: 10,
+
+            });
+          </script>
+
+          <script>
+           
+            var swiper = new Swiper(".mySwiper2", {
+              slidesPerView: 2,
+              centeredSlides: true,
+              spaceBetween: 30,
+              loop: true,
+             
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
 </body>
 
 </html>

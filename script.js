@@ -5,3 +5,6 @@ function handlmenu(){
     menu.classList.toggle("hidden");
 
 }
+
+// swiper
+
